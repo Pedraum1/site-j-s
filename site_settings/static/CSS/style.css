@@ -76,11 +76,67 @@ body {
 
   /* CLASSES CUSTOMZÁVEIS */
 
+  .img-lg{
+    display:none;
+  }
+  .img-md{
+    display:none;
+  }
+  .img-sm{
+    display:block;
+  }
+
+  @media(min-width:399px){
+
+    .img-lg{
+      display:none;
+    }
+    .img-md{
+      display:block;
+    }
+    .img-sm{
+      display:none;
+    }
+
+  }
+
+  @media(min-width:825px){
+    .img-lg{
+      display:block;
+    }
+    .img-md{
+      display:none;
+    }
+    .img-sm{
+      display:none;
+    }
+  }
+
   .navbar-link{
     color: var(--black);
+    text-decoration: none;
   }
 
   .bg-light{
-    background-color: var(--dark-white);
+    background-color: var(--white);
+  }
+  .bg-red{
+    background-color: var(--red);
+  }
+
+  .logo-navbar{
+    max-height: 100px;
   }
   
+  .text-light{
+    color:var(--dark-white)
+  }
+
+  .footer-link{
+    color: var(--white);
+    text-decoration: none;
+  }
+  .footer-link:hover{
+    color: var(--dark-red);
+    transition-duration: 0.3s;
+  }
