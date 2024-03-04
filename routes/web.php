@@ -24,3 +24,11 @@ Route::get('/about', function () {
 Route::get('/imovel/{id?}', function ($id) {
     return view('imovel', ['id'=>$id]);
 });
+
+Route::get('/login', function () {
+    return view('login/login');
+});
+
+Route::get('/plataforma', function () {
+    return view('Client/client');
+});

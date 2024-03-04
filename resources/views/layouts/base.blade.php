@@ -56,7 +56,6 @@
             <!--LOGIN E SIGN UP-->
             <div class="d-flex justify-content-center align-items-center flex-column flex-lg-row">
               <a class="text-decoration-none px-3 py-1 navbar-link" href="/login">LOGIN</a>
-              <a class="text-decoration-none px-3 py-1 navbar-link" href="/register">SIGN UP</a>
             </div>
           </div>
         </div>

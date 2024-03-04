@@ -69,7 +69,7 @@
 
   <div class="row justify-content-center">
     
-      @for($i=1;$i <= 4; $i++)
+      @for($i=1;$i <= 1; $i++)
       <card class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-4 m-auto card-grid">
         <a class="navbar-link" href="/imovel/{{$i}}">
           <div class="card p-3 border-0 shadow-lg rounded-1" style="width: 18em;">
