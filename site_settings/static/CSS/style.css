@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding:0;
+    border: 0;
+    font-size: 100%;
+    vertical-align:baseline;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* VARIÁVEIS */
+
+:root{
+    --white: #F6F6F6;
+    --dark-white:#E8E8E8;
+    --black:#333333;
+    --dark-red:#990100;
+    --red:#B90504;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+
+  /* CLASSES CUSTOMZÁVEIS */
+
+  .img-lg{
+    display:none;
+  }
+  .img-md{
+    display:none;
+  }
+  .img-sm{
+    display:block;
+  }
+
+  @media(min-width:399px){
+
+    .img-lg{
+      display:none;
+    }
+    .img-md{
+      display:block;
+    }
+    .img-sm{
+      display:none;
+    }
+
+  }
+
+  @media(min-width:825px){
+    .img-lg{
+      display:block;
+    }
+    .img-md{
+      display:none;
+    }
+    .img-sm{
+      display:none;
+    }
+  }
+
+  .navbar-link{
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  .bg-light{
+    background-color: var(--white);
+  }
+  .bg-red{
+    background-color: var(--red);
+  }
+
+  .logo-navbar{
+    max-height: 100px;
+  }
+  
+  .text-light{
+    color:var(--dark-white)
+  }
+
+  .footer-link{
+    color: var(--white);
+    text-decoration: none;
+  }
+  .footer-link:hover{
+    color: var(--dark-red);
+    transition-duration: 0.3s;
+  }
