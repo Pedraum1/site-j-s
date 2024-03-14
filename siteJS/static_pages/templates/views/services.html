@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block Titulo%}Nossos Serviços{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <h1 class="display-4 text-center mt-5">Explore nossos Serviços</h1>
+  <hr class="mx-auto mb-5 w-50">
+  <div class="row mb-5">
+
+    <!--CARD-->
+    <div class="col-10 col-md-6 col-lg-3 m-auto mb-5">
+      <div class="card border-0 shadow">
+        <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="card-img-top">
+        <div class="card-body">
+          <h3 class="text-center">Serviço</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+            culpa non at eius, beatae vitae voluptatum, totam odit ducimus commodi
+            deleniti sequi laborum neque qui asperiores repellat animi esse incidunt!
+          </p>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+
+{% endblock %}

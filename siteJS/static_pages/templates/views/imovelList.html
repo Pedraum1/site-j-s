@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block Titulo%}Imóveis{% endblock %}
+
+{% block content %}
+
+<div class="bg-white pb-4">
+
+  <div class="container pt-5">
+    <button class="btn btn-dark" id="switchBtn">Alterar sistema de pesquisa</button>
+  </div>
+  <!--PESQUISA POR FILTRO-->
+  <div class="container" id="filter">
+    <div class="row justify-content-center align-items-center ">
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 my-5">
+        <h6>Tipo do Imóvel</h6>
+        <select class="form-select shadow-sm" aria-label="Default select example">
+          <option selected>Selecione</option>
+          <option value="1">Apartamento</option>
+          <option value="2">Casa</option>
+          <option value="3">Ponto Comercial</option>
+          <option value="4">Terreno</option>
+        </select>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+        <h6>Valor mínimo</h6>
+        <div class="">
+          <input type="email" class="form-control shadow-sm" id="exampleFormControlInput1" placeholder="R$ 0,00">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+        <h6>Valor Máximo</h6>
+        <div class="">
+          <input type="email" class="form-control shadow-sm" id="exampleFormControlInput1" placeholder="R$ 0,00">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+        <h6>Bairro</h6>
+        <select class="form-select shadow-sm" aria-label="Default select example">
+          <option selected>Selecione</option>
+          <option value="1">Vila Pery</option>
+          <option value="2">Parangaba</option>
+          <option value="3">Moudubim</option>
+          <option value="4">Parque São José</option>
+          <option value="5">Maraponga</option>
+          <option value="6">Bonsucesso</option>
+          <option value="7">Montese</option>
+        </select>
+      </div>
+      <div class="col-lg-5 col-md-8 col-sm-10 col-xs-12 text-center">
+        <br>
+        <button type="button" class="btn btn-dark col-lg-4 col-md-3 col-sm-4 col-xs-6"><h5 class="poppins-light">Pesquisar</h5></button>
+      </div>
+    </div>
+  </div>
+
+  <!--PESQUISA POR TEXTO-->
+
+  <div class="container pt-5" id="search">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Pesquise um Imóvel</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder='Ex: "Rua Costa Mendes - 254" '>
+      <br>
+      <div class="text-center">
+        <button type="button" class="btn btn-dark"><h5 class="poppins-light">Pesquisar</h5></button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-12 mx-3 bg-white rounded-4 shadow-lg p-4">
+      <h3>Resultados para: "Pesquisa"</h3>
+      <p class="poppins-light"> 1 - 25 de XX resultados</p>
+
+      <a class="text-decoration-none card-link" href="">
+        <div class="container col-12 border rounded-3 row justify-content-around g-0 card-imovel my-5">
+        
+          <div class="col-md-4">
+            <img src="{% static 'IMG/logo-JS.png' %}" class="img-fluid p-3 img-card-list">
+          </div>
+          <div class="col-md-8 p-4">
+            <div class="row justify-content-between">
+              <div class="col-md-8 align-content-around">
+                <h4>NOME DO IMÓVEL</h4>
+                <small>X Quartos - X Banheiro - Sala - Cozinha - Área de Serviço - X Garagens</small>
+                <p class="paragraph my-5 d-none d-md-block"> DESCRIÇÃO Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nulla, quis magnam vero ratione
+                  inventore vel voluptates ipsum error animi maxime odio, tempore optio enim architecto officia sed nobis rerum.
+                </p>
+                <small class="mt-auto">R. XXXX XXXXXX, XXX - XX.XXX-XXX - BAIRRO/CIDADE</small>
+              </div>
+              <div class="col-md-4 text-end">
+                <h4>R$ 00.000,00</h4>
+                <h5"><span class="badge text-bg-danger fs-5 poppins-regular">TIPO-LOCAÇÃO</span></h2>
+              </div>
+            </div>
+          </div>        
+        </div>
+      </a>      
+    </div>
+  </div>
+</div>
+
+
+<script src="{% static 'JS/hide.js' %}"></script>
+{% endblock %}

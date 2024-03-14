@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block Titulo%}Sobre Nós{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+  <div class="text-center">
+    <h1 class="display-5 mt-5">Sobre Nós</h1>
+    <hr class="mb-5 w-25 mx-auto">
+  </div>
+
+  <!--QUEM SOMOS-->
+
+  <section class="my-5">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-md-6">
+        <h3 class="ms-5 mb-3 text-center">QUEM SOMOS</h3>
+        <p class="paragraph poppins-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nemo? 
+          Repellat magnam ipsam accusamus illum quam vel minima, repudiandae est nulla 
+          id voluptates reprehenderit error numquam fugiat? Iste, expedita necessitatibus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nemo? 
+          Repellat magnam ipsam accusamus illum quam vel minima, repudiandae est nulla 
+          id voluptates reprehenderit error numquam fugiat? Iste, expedita necessitatibus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nemo? 
+          Repellat magnam ipsam accusamus illum quam vel minima, repudiandae est nulla 
+          id voluptates reprehenderit error numquam fugiat? Iste, expedita necessitatibus!
+        </p>
+      </div>
+      <div class="col-12 col-md-4 d-none d-md-block">
+        <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="img-fluid">
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+  <!--MISSÃO/VISÃO/VALORES-->
+
+  <section class="my-5">
+
+    <!--ROW DESKTOP-->
+
+    <div class="d-none d-md-block">
+      <div class="row justify-content-center">
+        <!--MISSÃO-->
+        <div class="col-md-3 mx-auto col-12 value">
+          <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="img-fluid">
+          <div class="text-center">
+            <h3 class="poppins-regular display-3">MISSÃO</h3>
+            <p class="paragraph poppins-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ad unde nulla? Necessitatibus omnis sit optio</p>
+          </div>     
+        </div>
+        <!--VISÃO-->
+        <div class="col-md-3 mx-auto col-12 value">
+          <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="img-fluid">
+          <div class="text-center">
+            <h3 class="poppins-regular display-3">VISÃO</h3>
+            <p class="paragraph poppins-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ad unde nulla? Necessitatibus omnis sit optio</p>
+          </div>     
+        </div>
+        <!--VALORES-->
+        <div class="col-md-3 mx-auto col-12 value">
+          <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="img-fluid">
+          <div class="text-center">
+            <h3 class="poppins-regular display-3">VALORES</h3>
+            <p class="paragraph poppins-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ad unde nulla? Necessitatibus omnis sit optio</p>
+          </div>     
+        </div>
+        
+      </div>
+    </div>
+
+    <!--CARROSSEL MOBILE-->
+
+    <div class="d-block d-md-none">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            
+            <div class="col-7 mx-auto value">
+              <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="img-fluid">
+              <div class="text-center">
+                <h3 class="poppins-regular display-3">VALOR</h3>
+                <p class="paragraph poppins-light text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ad unde nulla? Necessitatibus omnis sit optio</p>
+              </div>     
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            
+            <div class="col-7 mx-auto value">
+              <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="img-fluid">
+              <div class="text-center">
+                <h3 class="poppins-regular display-3">VALORES</h3>
+                <p class="paragraph poppins-light text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ad unde nulla? Necessitatibus omnis sit optio</p>
+              </div>     
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            
+            <div class="col-7 mx-auto value">
+              <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="img-fluid">
+              <div class="text-center">
+                <h3 class="poppins-regular display-3">VALOR</h3>
+                <p class="paragraph poppins-light text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ad unde nulla? Necessitatibus omnis sit optio</p>
+              </div>     
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <br><br>
+
+  <!--EQUIPE-->
+
+  <section class="my-5">
+    <h1 class="ms-5 my-5 text-center">NOSSA EQUIPE</h1>
+    <div class="row justify-content-around align-items-center mb-5">
+      
+      <div class="col-6 col-md-4">
+        <h3 class="mb-3 text-center">JOÃO PAULO</h3>
+        <p class="paragraph poppins-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nemo? 
+          Repellat magnam ipsam accusamus illum quam vel minima, repudiandae est nulla 
+          id voluptates reprehenderit error numquam fugiat? Iste, expedita necessitatibus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nemo?
+        </p>
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="img-fluid">
+      </div>
+
+    </div>
+
+
+    <div class="row justify-content-around align-items-center mb-5">
+
+      
+      <div class="col-6 col-md-4 d-none d-md-block">
+        <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-4">
+        <h3 class="mb-3 text-center">SUZIANE DE QUEIROZ</h3>
+        <p class="paragraph poppins-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nemo? 
+          Repellat magnam ipsam accusamus illum quam vel minima, repudiandae est nulla 
+          id voluptates reprehenderit error numquam fugiat? Iste, expedita necessitatibus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nemo?
+        </p>
+      </div>
+      <div class="col-6 col-md-4 d-block d-md-none">
+        <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="img-fluid">
+      </div>
+
+    </div>
+
+  </section>
+  <br><br>
+
+</main>
+
+{% endblock %}

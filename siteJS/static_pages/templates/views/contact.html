@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block Titulo%}Formas de Contato{% endblock %}
+
+{% block content %}
+
+<main class="container">
+
+    <div class="text-center">
+      <h1 class="display-5 mt-5">Entre em contato conosco</h1>
+      <hr class="mb-5 w-50 mx-auto">
+    </div>
+    <div class="container mb-5">
+      <div class="row justify-content-around mt-5">
+        <div class="col-md-5 m-4">
+
+          <form class="col-11">
+            <div class="mb-3">
+              <label for="inputName" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp">              
+            </div>
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail">
+              <div id="emailHelp" class="form-text">Nunca compartilharemos compartilhar seu email com terceiros.</div>
+            </div>
+            <div class="mb-3">
+              <label for="inputTel" class="form-label">Password</label>
+              <input type="tel" class="form-control" id="inputTel">
+              <div id="emailHelp" class="form-text">Nunca compartilharemos seu número com terceiros.</div>
+            </div>
+            <div class="mb-3">
+              <label for="inputText" class="form-label">Mensagem</label>
+              <textarea name="text" id="inputText" rows="3" class="form-control"></textarea>
+            </div>
+            <div class="d-grid gap-2 p-3">
+              <button class="btn btn-danger" type="submit">Enviar</button>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="col-md-5 m-4">
+          <div class="col-11">
+            <h3 class="mb-5">Endereço:</h3>
+            <small><b>J&S - Corretores e Imóveis</b></small>
+            <h6 class="poppins-light mt-4">Rua Arruda Câmara 147 - CRECI/CE: 10250 F, Vila Pery - Fortaleza/CE, 60730-160</h6>
+            <h6 class="poppins-light"><i class="fa-brands fa-whatsapp fa-lg" style="color: #b90504;"></i> (85) 98774-4331 - João Paulo</h6>
+            <h6 class="poppins-light"><i class="fa-brands fa-whatsapp fa-lg" style="color: #b90504;"></i> (85) 98777-5743 - Suziane de Queiroz</h6>
+            <h6 class="poppins-light"><i class="fa-solid fa-envelope fa-lg" style="color: #b90504;"></i> contato@jscorretores.com.br</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</main>
+{% endblock %}

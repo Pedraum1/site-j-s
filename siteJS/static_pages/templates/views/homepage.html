@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block Titulo%}J&S - Corretores de Imóveis{% endblock %}
+
+{% block content %}
+
+<!--OUTDOOR-->
+
+  <img class="img-lg img-fluid" src="{% static 'IMG/banner-outdoor-lg.png' %}" alt="">
+  <img class="img-md img-fluid" src="{% static 'IMG/banner-outdoor-md.png' %}" alt="">
+  <img class="img-sm img-fluid" src="{% static 'IMG/banner-outdoor-sm.png' %}" alt="">
+
+<!--PESQUISA DE IMÓVEL-->
+
+<section class="bg-white">
+
+  <div class="container">
+    <br>
+    <h5 class="text-center">Encontre seu imóvel ideal</h5>
+    <br>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+        <h6>Tipo do Imóvel</h6>
+        <select class="form-select shadow-sm" aria-label="Default select example">
+          <option selected>Selecione</option>
+          <option value="1">Apartamento</option>
+          <option value="2">Casa</option>
+          <option value="3">Ponto Comercial</option>
+          <option value="4">Terreno</option>
+        </select>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+        <h6>Valor mínimo</h6>
+        <div class="">
+          <input type="email" class="form-control shadow-sm" id="exampleFormControlInput1" placeholder="R$ 0,00">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+        <h6>Valor Máximo</h6>
+        <div class="">
+          <input type="email" class="form-control shadow-sm" id="exampleFormControlInput1" placeholder="R$ 0,00">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+        <h6>Bairro</h6>
+        <select class="form-select shadow-sm" aria-label="Default select example">
+          <option selected>Selecione</option>
+          <option value="1">Vila Pery</option>
+          <option value="2">Parangaba</option>
+          <option value="3">Moudubim</option>
+          <option value="4">Parque São José</option>
+          <option value="5">Maraponga</option>
+          <option value="6">Bonsucesso</option>
+          <option value="7">Montese</option>
+        </select>
+      </div>
+      <div class="col-lg-5 col-md-8 col-sm-10 col-xs-12 text-center">
+        <br>
+        <button type="button" class="btn btn-dark col-lg-4 col-md-3 col-sm-4 col-xs-6"><h5 class="poppins-light">Pesquisar</h5></button>
+      </div>
+    </div>
+    <br>
+  </div>
+</section>
+
+<!--CARDS DE DESTAQUE-->
+
+<section class="container py-5">
+  <h1 class="poppins-light text-center">Imóveis em Destaque</h1>
+
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-3 col-12">
+
+      <div class="row justify-content-center my-2">
+        <div class="card rounded-3 shadow-lg shadow-lg" style="width: 18rem;">
+          <img src="{% static 'IMG/logo-JS.png' %}" class="card-img-top p-4">
+          <div class="card-body">
+            <h5 class="card-title fs-4">IMÓVEL <br>
+              <small class="poppins-regular fs-6">Bairro - Cidade/UF</small>
+            </h5>
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <small class="fs-4">R$ 00.000,00</small>
+              </div>
+              <div class="col-auto">
+                <small class="fs-6"><span class="text-bg-danger badge poppins-light">VENDA</span></small>
+              </div>
+            </div>
+            <p class="card-text poppins-light">
+              <i class="fa-solid fa-bed"></i> X quartos <br>
+              <i class="fa-solid fa-car"></i> X garagens <br>
+              <i class="fa-solid fa-expand"></i> XX m² <br>
+            </p>
+            <a href="#" class="stretched-link"></a>
+          </div>          
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <br><br>
+</section>
+
+
+{% endblock %}
