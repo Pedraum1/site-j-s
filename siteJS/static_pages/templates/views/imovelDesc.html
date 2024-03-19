@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block Titulo%}Imóveis{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+  <h1 class="poppins-light">{{imovel.nome}}</h1>
+</div>
+
+
+<!--IMAGENS FULLSCREEN-->
+<div class="d-md-block d-none">
+  <div class="row my-5">
+    <div class="col-3 mx-auto">
+      <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="img-fluid value">
+    </div>
+    <div class="col-3 mx-auto">
+      <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="img-fluid value">
+    </div>
+    <div class="col-3 mx-auto">
+      <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="img-fluid value">
+    </div>
+  </div>
+</div>
+
+
+<!--IMAGENS CARROSSEL RESPONSIVO-->
+<div class="container-fluid mt-5 d-md-none d-block">
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'IMG/logo-JS.png' %}" class="d-block img-fluid" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'IMG/logo-JS.png' %}" class="d-block img-fluid" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'IMG/logo-JS.png' %}" class="d-block img-fluid" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+
+<!--INFOS-->
+<div class="container my-5 bg-white rounded-4 shadow p-4">
+
+  <div class="row my-3 justify-content-around align-items-center border-bottom pb-4 border-2 text-center">
+    <div class="col-md-3 col-5">
+      <small>Aluguel</small>
+      <h3>R$ {{imovel.valor}},00</h3>
+    </div>
+    <div class="col-md-3 col-5">
+      <small>Quartos</small>
+      <h3>X Quartos</h3>
+    </div>
+    <div class="col-md-3 col-5">
+      <small>Garagens</small>
+      <h3>X Garagens</h3>
+    </div>
+    <div class="col-md-3 col-5">
+      <small>Área total</small>
+      <h3>XX m²</h3>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-4">
+
+      <div class="row justify-content-center border-bottom border-2 p-4 shadow rounded-4">
+        <h4 class="text-center">Informaçõs de Contato</h4>
+
+        <div class="col-md-3 col-6">
+          <img src="{% static 'IMG/logo-JS.png' %}" alt="" class="img-fluid" style="border-radius: 50%;">
+        </div>
+
+        <div class="col-md-9 col-6">
+          <strong>João Paulo de Queiroz Medeiros</strong>
+          <small>CRECI - 12345</small><br>
+          <small><i class="fa-brands fa-whatsapp" style="color: #b90504;"></i> (XX) XXXXX-XXXX</small>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="col-md-8">
+
+      <div class="mb-3 border-bottom border-2 pb-4 pt-md-0 pt-4">
+        <h4>Cômodos</h4>
+        <small class="fs-6 mx-1"><span class="text-bg-secondary badge poppins-light">{{imovel.quartos}} quarto(s)</span></small>
+        <small class="fs-6 mx-1"><span class="text-bg-secondary badge poppins-light">{{imovel.salas}} sala(s)</span></small>
+        <small class="fs-6 mx-1"><span class="text-bg-secondary badge poppins-light">{{imovel.banheiros}} banheiro(s)</span></small>
+        <small class="fs-6 mx-1"><span class="text-bg-secondary badge poppins-light">{{imovel.servicos}} área de serviço</span></small>
+        <small class="fs-6 mx-1"><span class="text-bg-secondary badge poppins-light">{{imovel.cozinhas}} cozinha(s)</span></small>
+        <small class="fs-6 mx-1"><span class="text-bg-secondary badge poppins-light">{{imovel.garagens}} garagem(s)</span></small>
+      </div>
+
+      <div class="mb-3 border-bottom border-2 pb-4">
+        <h4>Características do Imóvel</h4>
+        <small class="fs-6 mx-1"><span class="text-bg-secondary badge poppins-light">Interfone</span></small>
+        <small class="fs-6 mx-1"><span class="text-bg-secondary badge poppins-light">Poço</span></small>
+      </div>
+
+      <div class="mb-3 border-bottom border-2 pb-4">
+        <h4>Descrição</h4>
+        <p class="poppins-light">{{imovel.descricao}}</p>
+      </div>
+
+      <div class="mb-3 boder-bottom border-2 pb-4">
+        <h4>Localização</h4>
+        <small>{{imovel.rua}}, XXX - {{imovel.bairro}} - {{imovel.cidade}}/CE - {{imovel.cep}}</small>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

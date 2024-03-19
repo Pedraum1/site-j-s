@@ -145,6 +145,22 @@ body {
   transform: scale(110%);
 }
 
+.footer-link{
+  transition: 0.25s;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer-link:hover{
+  transition: 0.25s;
+  color: var(--gray);
+}
+
+.footer-link:active{
+  transition: 0.25s;
+  color: var(--dark-red);
+}
+
 #search,#filter {
   animation-name: fade;
   animation-duration: 0.75s;
@@ -200,8 +216,6 @@ body {
   transition: 0.5s;
   transform: scale(110%);
 }
-
-
 
 /* ========================== RESPOSIVIDADADE =============================== */
 
